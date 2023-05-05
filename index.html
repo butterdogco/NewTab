@@ -3,63 +3,78 @@
   <head>
     <title>New Tab</title>
     <link rel="icon" href="https://iconarchive.com/download/i85548/graphicloads/100-flat/browser.ico">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
       body {
-       font-family: 'Roboto', sans-serif; 
+       font-family: 'Roboto', sans-serif;
+      }
+      center {
+        transform: translate(-50%, -50%);
+        position: fixed;
+        top: 50%;
+        left: 50%;
       }
       .url_input {
         background-color: #e9e9e9;
-        border-radius: 30px;
-        padding: 15px;
-        margin-top: 15px;
-        width: 600px;
-        height: 20px;
+        border-radius: 15vh;
+        padding: 2vh;
+        margin-top: 1vh;
+        width: 60vw;
+        height: 4vh;
         transition-duration: 0.2s;
       }
       .url_input:hover {
-        background-color: #e9e9e9; 
+        background-color: #e9e9e9;
       }
       input {
         background-color: transparent;
         border: none;
         color: gray;
         float: left;
-        margin-left: 10px;
-        margin-bottom: 5px;
-        width: 530px;
+        margin-left: 1%;
+        margin-bottom: .1vh;
+        width: 90%;
+        font-size: 2vh;
+        padding: 1%;
       }
       textarea:focus, input:focus{
         outline: none;
       }
       .search-icon {
-        float: right; 
+        float: right;
+        height: 100%;
       }
       .recommended {
-      margin-top: 30px;
+      margin-top: 1vh;
       }
       .siteimg {
-      margin-left: 10px;
-      margin-right: 10px;
+      margin-left: 1vh;
+      margin-right: 1vh;
       transition-duration: 0.2s;
-      height: 50px;
-      width: 50px;
+      height: 9vh;
+      width: 9vh;
       display: inline;
       background-color: #ffffff;
-      border-radius: 5px;
-      padding: 10px;
+      border-radius: 50%;
+      padding: 2vh;
       text-decoration: none;
+      overflow: visible;
+      object-fit: contain;
       }
       .siteimg:hover {
       background-color: #e9e9e9;
       }
       a {
-      text-decoration: none; 
+      text-decoration: none;
+      }
+      .logo {
+        width: 30vw;
       }
     </style>
   </head>
   <body>
     <center>
-      <img src="image (1).png" width="330px" style="margin-top: 80px;">
+      <img src="https://butterdogco.com/NewTab/image (1).png" width="330px" class="logo">
       <div class="url_input">
         <form method="get" action="https://google.com/search">
           <input type="search" name="query" placeholder="Search Google"/>
@@ -67,7 +82,7 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/1200px-Vector_search_icon.svg.png" height="20px" class="search-icon">
     </div>
     <div class="recommended">
-      <p style="color: #c2c2c2;">Top Sites</p>
+      <p style="color: #c2c2c2;font-size:2vh;cursor:default;">Top Sites</p>
         <a href="https://google.com">
         <img class="siteimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1200px-Google_%22G%22_Logo.svg.png">
         </a>
@@ -78,7 +93,7 @@
         <img class="siteimg" src="https://logodownload.org/wp-content/uploads/2018/02/reddit-logo-16.png">
         </a>
         <a href="https://twitter.com">
-        <img class="siteimg" src="https://www.torqlite.com/wp-content/uploads/2017/02/60414c58e954d7236837248225e0216f_new-twitter-logo-vector-eps-twitter-logo-clipart_518-518.png">
+        <img class="siteimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png?20220821125553">
         </a>
         <a href="https://instagram.com">
         <img class="siteimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png">
